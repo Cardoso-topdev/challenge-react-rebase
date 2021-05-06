@@ -12,3 +12,8 @@ test('renders Biology Today article', () => {
   const linkElement = screen.getByText(/Biology Today:/i);
   expect(linkElement).toBeInTheDocument();
 });
+test('renders Auto Review Article', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Auto Review:/i);
+  expect(linkElement).toBeInTheDocument();
+});
